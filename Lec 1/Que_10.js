@@ -1,4 +1,4 @@
-/* Find Missing Number
+/* Missing Number
 
 Write a function to find the missing number in an array of integers from 1 to n.
 
