@@ -5,20 +5,20 @@ Given an array of integers, write a function to find the contiguous subarray wit
  Input: [2, 3, -2, 4]
 Output: 6 (The subarray [2, 3] has the largest product 6.) */
 
-const maximumSubArray =(arr)=>{
-
-   
-
-    for(let i =0; i< arr.length;i++ ){
-        for(let j=i+1; j<arr.length-1;j++)
-        if(arr[i]<arr[j]){
-            let max=Math.max(arr[i],arr[j])
-        }
-
+const maximumProductSubarray = (arr) => {
+    let max = arr[0];
+    let maxEnding = arr[0];
+    let minEnding = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        let temp = maxEnding;
+        maxEnding = Math.max(arr[i], maxEnding * arr[i], minEnding * arr[i]);
+        minEnding = Math.min(arr[i], temp * arr[i], minEnding * arr[i]);
+        max = Math.max(max, maxEnding);
     }
-    return max;
 
-}
+    return max;
+};
+
 let arr = [2, 3, -2, 4];
-console.log(maximumSubArray(arr));
+console.log(maximumProductSubarray(arr));
 
