@@ -39,3 +39,5 @@ const  capitalFirstLetterOfWord =(paragraph)=> {
 const input = 'the quick Brown fox jumps over The lazy dog.';
 const output = capitalFirstLetterOfWord(input);
 console.log(output);
+
+

@@ -23,8 +23,8 @@
 
 
 function findPairs(weights, target) {
-    // sort array
-    weights.sort((a, b) => a - b);
+    
+    
 
     let left = 0;
     let right = weights.length - 1;
@@ -47,12 +47,12 @@ function findPairs(weights, target) {
     return result;
 }
 
-// Sample Input
+
 const weights = [1, 2, 3, 4, 5, 6];
 const target = 7;
 
-// Find pairs
+
 const pairs = findPairs(weights, target);
 
-// Print pairs
+
 pairs.forEach(pair => console.log(pair[0], pair[1]));
