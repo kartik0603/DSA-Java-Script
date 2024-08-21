@@ -3,19 +3,6 @@
 // Write a function that takes an array of integers and a number k. Using the sliding window technique,
 // find the minimum sum of any contiguous subarray of size k.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const minSumOfSubArray = (arr, subArraySize) => {
     if (arr.length < subArraySize) {
         return 0;
