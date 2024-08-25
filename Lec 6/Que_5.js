@@ -1,6 +1,4 @@
-// N Traversal of a 2D Matrix:
-
-
+// Z Traversal of a 2D Matrix:
 
 
 
@@ -18,7 +16,7 @@ let nPatternArray = [];
 
 for (let i = 0; i < n; i++) {
     for (let j = 0; j < m; j++) {
-        if (j == 0 || j == m - 1 || i == j) {
+        if (i== 0 || i == n- 1 || i == j) {
             nPatternArray.push(matrix[i][j]);
         }
     }
@@ -39,10 +37,10 @@ console.log(nPatternArray);
 // let n = matrix.length;
 // let m = matrix[0].length;
 
-// // Print "N" pattern
+// // Print Zpattern
 // for (let i = 0; i < n; i++) {
 //     for (let j = 0; j < m; j++) {
-//         if (j == 0 || j == m - 1 || i == j) {
+//        if (i== 0 || i == n- 1 || i == j) {
 //             process.stdout.write(matrix[i][j] + " ");
 //         } else {
 //             process.stdout.write("  ");
