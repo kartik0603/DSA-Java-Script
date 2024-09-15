@@ -4,10 +4,10 @@
 // Input: 48, 18
 // Output: 6
 
-const GSD= (a,b)=>{
+const GcD= (a,b)=>{
     if(b==0){
         return a;
     }
-    return GSD(b,a%b);
+    return GcD(b,a%b);
 }
-console.log(GSD(48,18));
+console.log(GcD(48,18));
