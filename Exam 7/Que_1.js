@@ -34,7 +34,7 @@ const lastPosition = (nums, tagrget) => {
   while (low <= high) {
     let mid = Math.floor((low + high) / 2);
     if (nums[mid] === tagrget) {
-      if (mid == n - 1 || nums[nums + 1] !== target) {
+      if (mid == n - 1 || nums[mid + 1] !== target) {
         return mid;
       } else high = mid - 1;
     } else if (nums[mid] < tagrget) {
